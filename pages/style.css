@@ -1,0 +1,38 @@
+body{
+    background-color: hsl(202, 86%, 94%);
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 90vh;
+    height: 60vh;
+}
+.left-section{
+    width: 90vh;
+    height: 60vh;
+    border-radius: 20px 0px 50px 20px;
+}
+.right-section{
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 0px 20px 20px 50px;
+    width: 90vh;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+img{
+    height: 140px;
+}
+.title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
