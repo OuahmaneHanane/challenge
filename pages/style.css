@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 body{
     background-color: hsl(202, 86%, 94%);
     height: 100vh;
     margin: 0px;
     display: flex;
     justify-content: center;
+    font-family: 'Plus Jakarta Sans';
 }
 .container{
     background-color: hsl(0, 0%, 100%);
@@ -11,28 +13,142 @@ body{
     justify-content: center;
     align-self: center;
     align-items: center;
-    width: 90vh;
-    height: 60vh;
+    width: 100vh;
+    height: 60vh; 
+    border-radius: 20px 20px 20px 20px;
+
+
 }
 .left-section{
-    width: 90vh;
+    width: 45%;
     height: 60vh;
-    border-radius: 20px 0px 50px 20px;
+    margin: 20px;
+    position: relative;
+    gap: 20px;
+}
+
+.title{
+    margin: 12px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 15px;
+}
+
+#clear-btn{
+    border: 0px;
+    background: none;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: hsl(200, 24%, 40%);
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    gap: 10px;
+}
+.currency-symbol{
+    background-color: hsl(202, 86%, 94%);
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    font-size: 16px;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+div{
+    flex: 1;
+    min-width: 0;
+}
+.years{
+    position: absolute;
+    left: 100px;
+    top: 35%;
+}
+.percent{
+    position: absolute;
+    left: 260px;
+    top: 35%;
+}
+
+#Term,
+#Rate{
+    width: 100%;
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+}
+
+.option1{
+    border: 1px solid hsl(200, 24%, 40%);
+    margin: 5px 0px;
+    border-radius: 2px;
+}
+
+.option2{
+    border: 1px solid hsl(200, 24%, 40%);
+    margin: 5px 0px;
+    border-radius: 2px;
+
+}
+
+label{
+    font-size: 11px;
+    color: hsl(200, 24%, 40%);
+    font-weight: 600;
+}
+
+#label1,
+#label2{
+    color: black;
+    font-size: 12px;
+}
+
+#calculate{
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 600;
+    background-image: url("../assets/images/icon-calculator.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    padding-left: 40px;
+    gap: 10px;
 }
 .right-section{
+    padding: 0px 15px;
     background-color: hsl(202, 55%, 16%);
     border-radius: 0px 20px 20px 50px;
-    width: 90vh;
+    width: 50%;
     height: 60vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 img{
-    height: 140px;
+    height: 130px;
 }
-.title{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+span{
+    font-size: 11px;
+    color: hsl(200, 24%, 40%);
+    font-weight: 600;
 }
