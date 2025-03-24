@@ -5,25 +5,29 @@ body{
     margin: 0px;
     display: flex;
     justify-content: center;
-    font-family: 'Plus Jakarta Sans';
+    align-items: center;
+    font-family: 'Plus Jakarta Sans',sans-serif;
 }
 .container{
     background-color: hsl(0, 0%, 100%);
     display: flex;
+    flex-direction: row;
+    width: 70vw;
+    max-height: 800px;
     justify-content: center;
     align-self: center;
     align-items: center;
-    width: 100vh;
-    height: 60vh; 
+    max-width: 1200px;
+    height: 70vh; 
     border-radius: 20px 20px 20px 20px;
+    margin: 20px;
 
 
 }
 .left-section{
-    width: 45%;
+    width: 50%;
     height: 60vh;
     margin: 20px;
-    position: relative;
     gap: 20px;
 }
 
@@ -55,13 +59,6 @@ h1{
     width: 100%;
     gap: 10px;
 }
-.currency-symbol{
-    background-color: hsl(202, 86%, 94%);
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    font-size: 16px;
-}
 
 .second{
     display: flex;
@@ -71,16 +68,6 @@ h1{
 div{
     flex: 1;
     min-width: 0;
-}
-.years{
-    position: absolute;
-    left: 100px;
-    top: 35%;
-}
-.percent{
-    position: absolute;
-    left: 260px;
-    top: 35%;
 }
 
 #Term,
@@ -136,7 +123,7 @@ label{
     background-color: hsl(202, 55%, 16%);
     border-radius: 0px 20px 20px 50px;
     width: 50%;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -151,4 +138,47 @@ span{
     font-size: 11px;
     color: hsl(200, 24%, 40%);
     font-weight: 600;
+}
+
+
+@media(max-width:600px){
+
+    body{
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .container{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+        margin: 40px 0;
+        max-height: none;
+    }
+    
+    .left-section,.right-section{
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .left-section{
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        margin: 0 0 20px 0;
+        position: relative;
+        z-index: 1;
+    }
+
 }
